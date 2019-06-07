@@ -1,0 +1,8 @@
+<h1>Authors</h1>
+
+<ul *ngIf="authors">
+  <li *ngFor="let author of authors">
+    <img [src]="author.avatar">
+    <p>{{ author.name }}</p>
+  </li>
+</ul>
